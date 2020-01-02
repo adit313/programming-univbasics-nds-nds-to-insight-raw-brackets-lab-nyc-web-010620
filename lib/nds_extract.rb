@@ -25,8 +25,8 @@ def directors_totals(nds)
     temp_gross = 0
     
     while nds[i][:movie][j] do
-      temp_gross +=nds[i][:movie][j][:worldwide_gross]
-      j+=1
+      temp_gross += nds[i][:movie][j][:worldwide_gross]
+      j += 1
       end
     result << { nds[i][:name] => temp_gross}
     i+=1
