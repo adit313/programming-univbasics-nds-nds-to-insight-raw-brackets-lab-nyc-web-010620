@@ -28,6 +28,7 @@ def directors_totals(nds)
       temp_gross += nds[i][:movie][j][:worldwide_gross]
       j += 1
       end
+      
     result << { nds[i][:name] => temp_gross}
     i+=1
   end
