@@ -28,7 +28,7 @@ def directors_totals(nds)
       j += 1
       end
       
-    result << { nds[i][:name] => temp_gross}
+    result[nds[i][:name]] = temp_gross
     i+=1
   end
   
