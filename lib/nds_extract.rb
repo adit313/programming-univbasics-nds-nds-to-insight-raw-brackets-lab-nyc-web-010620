@@ -19,16 +19,12 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   i = 0
-  j = 0
-  pp nds[i]
   gross = 0
   while nds[i] do
     j = 0
     temp_gross = 0
-    pp nds[i][:movie]
-    while nds[i][:movie][j] do
-      gross = nds[i][:movie][j][:worldwide_gross].inspect
-      temp_gross += gross
+    while nds[i][:movies][j] do
+      temp_gross += nds[i][:movies][j][:worldwide_gross]
       j += 1
       end
       
