@@ -20,6 +20,7 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   i = 0
   j = 0
+  pp nds[i]
   gross = 0
   while nds[i] do
     j = 0
