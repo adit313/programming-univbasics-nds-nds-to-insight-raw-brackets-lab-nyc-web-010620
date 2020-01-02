@@ -21,12 +21,11 @@ def directors_totals(nds)
   i = 0
   j = 0
   gross = 0
-  while nds[i] do
+  while i < nds.length do
     j = 0
     temp_gross = 0
     
-    while nds[i][:movie][j] do
-      nds[i][:movie][j][:worldwide_gross].inspect
+    while j < nds[i][:movie].length do
       temp_gross += nds[i][:movie][j][:worldwide_gross]
       j += 1
       end
